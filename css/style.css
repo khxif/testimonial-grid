@@ -1,0 +1,179 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 81%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 5% 10%;
+  gap: 1rem;
+  height: 100vh;
+}
+.grid .grid-item {
+  padding: 1.7rem;
+  min-height: 18rem;
+  border-radius: 0.4rem;
+}
+.grid .item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(270deg, 39%, 47%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 21rem top;
+}
+.grid .item-1 .name p {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 0.2rem;
+}
+.grid .item-1 .name h6 {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+.grid .item-1 .content h3 {
+  margin-top: 0.8rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.grid .item-1 .content p {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.7;
+}
+.grid .item-2 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 19%, 35%);
+}
+.grid .item-2 .name p {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 0.2rem;
+}
+.grid .item-2 .name h6 {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+.grid .item-2 .content h3 {
+  margin-top: 0.4rem;
+}
+.grid .item-2 .content p {
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+}
+.grid .item-3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  height: auto;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(217deg, 19%, 35%);
+}
+.grid .item-3 img {
+  margin-right: 1rem;
+}
+.grid .item-3 .name p {
+  margin-bottom: 0.2rem;
+}
+.grid .item-3 .name h6 {
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+.grid .item-3 .content h3 {
+  margin-top: 0.5rem;
+}
+.grid .item-3 .content p {
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+}
+.grid .item-4 {
+  color: hsl(217deg, 19%, 35%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+.grid .item-4 img {
+  margin-right: 1rem;
+}
+.grid .item-4 .name p {
+  margin-bottom: 0.3rem;
+}
+.grid .item-4 .name h6 {
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+.grid .item-4 .content h3 {
+  margin-top: 0.7rem;
+}
+.grid .item-4 .content p {
+  margin-top: 1.8rem;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.grid .item-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: hsl(219deg, 29%, 14%);
+}
+.grid .item-5 .name p {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 0.2rem;
+}
+.grid .item-5 .name h6 {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+.grid .item-5 .content h3 {
+  margin-top: 0.8rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.grid .item-5 .content p {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.7;
+}
+
+.pfp img {
+  border-radius: 50%;
+  width: 2.4rem;
+  margin-right: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .grid {
+    margin: 2rem;
+    display: block;
+  }
+  .grid-item {
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

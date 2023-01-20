@@ -1,0 +1,198 @@
+@import './flex';
+
+$white-color:hsl(0, 0%, 100%);
+$violet-color:hsl(270, 39, 47);
+$gray-color:hsl(217, 19%, 35%);
+$balckish-blue-color:hsl(219, 29%, 14%);
+$light-gray:hsl(0, 0%, 81%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-color: $light-gray;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin: 5% 10%;
+    gap: 1rem;
+    height: 100vh;
+    .grid-item{
+        padding: 1.7rem;
+        min-height: 18rem;
+        border-radius: 0.4rem;
+    }
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: $violet-color;
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: 21rem top;
+        .name{
+            p{
+                color: $white-color;
+                margin-bottom: 0.2rem;
+            }
+            h6{
+                color: $white-color;
+                opacity: 0.5;
+                font-size: 0.7rem;
+            }
+        }
+        .content{
+        h3{
+            margin-top: 0.8rem;
+            color: $white-color;
+        }
+        p{
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+            color: $white-color;
+            opacity: 0.7;
+        }
+    }
+    }
+    .item-2{
+        color: $white-color;
+        background-color: $gray-color;
+        .name{
+            p{
+                color: $white-color;
+                margin-bottom: 0.2rem;
+            }
+            h6{
+                color: $white-color;
+                opacity: 0.5;
+                font-size: 0.7rem;
+            }
+        }
+        .content{
+            h3{
+                margin-top: 0.4rem;
+            }
+            p{
+                margin-top: 0.5rem;
+                opacity: 0.7;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .item-3{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        height: auto;
+        background-color: $white-color;
+        color: $gray-color;
+        img{
+            margin-right: 1rem;
+        }
+        .name{
+            p{
+                margin-bottom: 0.2rem;
+            }
+            h6{
+                opacity: 0.5;
+                font-size: 0.7rem;
+            }
+        }
+        .content{
+            h3{
+                margin-top: 0.5rem;
+            }
+            p{
+                margin-top: 0.5rem;
+                opacity: 0.7;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .item-4{
+        color: $gray-color;
+        background-color: $white-color;
+        img{
+            margin-right: 1rem;
+        }
+        .name{
+            p{
+                margin-bottom: 0.3rem;
+            }
+            h6{
+                opacity: 0.5;
+                font-size: 0.7rem;
+            }
+        }
+        .content{
+            h3{
+                margin-top: 0.7rem;
+            }
+            p{
+                margin-top: 1.8rem;
+                opacity: 0.7;
+                font-size: 0.9rem;
+                font-weight: 500;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    .item-5{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: $balckish-blue-color;
+        .name{
+            p{
+                color: $white-color;
+                margin-bottom: 0.2rem;
+            }
+            h6{
+                color: $white-color;
+                opacity: 0.5;
+                font-size: 0.7rem;
+            }
+        }
+        .content{
+        h3{
+            margin-top: 0.8rem;
+            color: $white-color;
+        }
+        p{
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+            color: $white-color;
+            opacity: 0.7;
+        }
+    }
+    }
+}
+.pfp img{
+    border-radius: 50%;
+    width: 2.4rem;
+    margin-right: 0.8rem;
+}
+
+@media (max-width:600px){
+    body{
+        height: auto;
+    }
+    .grid{
+        margin: 2rem;
+        display: block;
+    }
+    .grid-item{
+        margin-bottom: 2rem;
+    }
+}
